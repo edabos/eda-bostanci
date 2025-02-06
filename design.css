@@ -31,11 +31,6 @@ body{
 	min-height: 100vh;
 }
 
-@media (max-width: 450px) {
-    body {
-
-    }
-}
 
 
 
@@ -103,7 +98,7 @@ body{
 	right: 70px;
 }
 
-	@media (max-width: 450px) {
+	@media (max-width: 600px) {
 		.menu-button {
 			right: 20px;
 			font-size: 120px;
@@ -133,7 +128,7 @@ body{
 	transition: background 1s;
 }
 
-	@media (max-width: 450px) {
+	@media (max-width: 600px) {
 		.menu a {
 			font-size: 7vw;
 		}
@@ -260,7 +255,7 @@ body{
 		}
 	}
 	
-	@media (max-width: 450px) {
+	@media (max-width: 600px) {
 		.projects-grid {
 			grid-template-columns: 1fr;
 		}
@@ -296,7 +291,7 @@ body{
 	font-size:40px;
 }
 
-	@media (max-width: 450px) {
+	@media (max-width: 600px) {
 		.project h2 {
 			font-size: 6vw;
 		}
@@ -341,7 +336,7 @@ body{
 	padding-right: 20px;
 }
 
-	@media (max-width: 450px) {
+	@media (max-width: 600px) {
 		.project-content {
 			padding-right: 30px;
 		}
@@ -382,7 +377,7 @@ body{
 	margin:50px;
 }
 
-	@media (max-width: 450px) {
+	@media (max-width: 600px) {
 		.project-images {
 			display: flex;
 			flex-direction: column;
@@ -401,7 +396,7 @@ body{
 }
 
 
-	@media (max-width: 450px) {
+	@media (max-width: 600px) {
 		.project-title {
 			font-size: clamp(20px, 5vw, 30px);
 		}
@@ -520,7 +515,7 @@ footer {
 	}
 
 
-		@media (max-width: 768px) {
+		@media (max-width: 600px) {
 			.footer-links {
 				display: block;
 				margin-top: 10px;
