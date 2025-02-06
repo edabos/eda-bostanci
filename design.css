@@ -104,8 +104,8 @@ body{
 			padding-right:20px;
 			font-size: 100px;
 			transition:none;
-			transition: transform 2s ease, font-size 2s ease;
-			animation:colorChange 8s infinite alternate;
+			animation:colorChange 0s infinite alternate;
+				animation: rotate-plus 0s ease-in-out infinite alternate;
 		}
 	}
 
