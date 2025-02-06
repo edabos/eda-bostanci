@@ -101,8 +101,7 @@ body{
 		.menu-button {
 			right: 0px;
 			padding-right:20px;
-			font-size: 100px;
-			transition:none
+			transition: transform 0.0s ease, font-size 0.0s ease;
 			animation:colorChange 5s infinite alternate;
 			animation: rotate-plus 0s ease-in-out infinite alternate;
 		}
