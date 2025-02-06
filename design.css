@@ -97,7 +97,7 @@ body{
 	right: 70px;
 }
 
-	@media (max-width: 600px) {
+	@media (max-width: 400px) {
 		.menu-button {
 			right: 20px;
 		}
@@ -125,7 +125,7 @@ body{
 	transition: background 1s;
 }
 
-	@media (max-width: 600px) {
+	@media (max-width: 400px) {
 		.menu a {
 			font-size: 7vw;
 		}
@@ -288,7 +288,7 @@ body{
 	font-size:40px;
 }
 
-	@media (max-width: 768px) {
+	@media (max-width: 400px) {
 		.project h2 {
 			font-size: 6vw;
 		}
@@ -374,7 +374,7 @@ body{
 	margin:50px;
 }
 
-	@media (max-width: 768px) {
+	@media (max-width: 400px) {
 		.project-images {
 			display: flex;
 			flex-direction: column;
@@ -393,7 +393,7 @@ body{
 }
 
 
-	@media (max-width: 600px) {
+	@media (max-width: 400px) {
 		.project-title {
 			font-size: clamp(20px, 5vw, 30px);
 		}
