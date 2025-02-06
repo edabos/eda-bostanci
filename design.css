@@ -102,8 +102,7 @@ body{
 			right: 0px;
 			padding-right:20px;
 			transition: transform 0.0s ease, font-size 0.0s ease;
-			animation: colorChange 8s infinite alternate;
-			animation: rotate-plus 0s ease-in-out infinite alternate;
+			animation: colorChange 8s infinite alternate, rotate-plus 0s ease-in-out infinite alternate;
 		}
 	}
 
@@ -523,7 +522,7 @@ footer {
 	}
 
 
-	@media (max-width: 800px) {
+	@media (max-width: 600px) {
 		.footer-text {
 			font-size: 10px;
 			line-height: 1.2;
