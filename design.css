@@ -103,6 +103,8 @@ body{
 			right: 0px;
 			padding-right:20px;
 			font-size: 100px;
+			transition:none;
+			animation:colorChange 8s infinite alternate;
 		}
 	}
 
