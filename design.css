@@ -97,7 +97,7 @@ body{
 	right: 70px;
 }
 
-	@media (max-width: 768px) {
+	@media (max-width: 600px) {
 		.menu-button {
 			right: 20px;
 		}
@@ -125,7 +125,7 @@ body{
 	transition: background 1s;
 }
 
-	@media (max-width: 768px) {
+	@media (max-width: 600px) {
 		.menu a {
 			font-size: 7vw;
 		}
@@ -323,6 +323,8 @@ body{
 	width: 90%;
 	text-align: left;
 	margin-left:50px;
+	
+	padding-bottom: 100px;
 }
 
 
@@ -391,7 +393,7 @@ body{
 }
 
 
-	@media (max-width: 768px) {
+	@media (max-width: 600px) {
 		.project-title {
 			font-size: clamp(20px, 5vw, 30px);
 		}
