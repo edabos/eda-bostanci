@@ -98,13 +98,7 @@ body{
 	right: 70px;
 }
 
-	@media (max-width: 600px) {
-		.menu-button {
-			padding-right: 5px;
-			font-size: 100px;
 
-		}
-	}
 
 
 .menu{
@@ -517,31 +511,7 @@ footer {
 			
 		animation: colorChange 5s infinite alternate;
 	}
-	
-		@media (max-width: 600px) {
-			footer {
-				font-size: 10px;  /* Verringert die Schriftgröße */
-				padding: 20px 0;  /* Weniger Padding für den Footer */
-			}
-
-			.footer-content {
-				max-width: 100%;  /* Maximiert die Breite des Footer-Inhalts */
-				padding: 0 15px;  /* Weniger Padding an den Seiten */
-			}
-
-			.footer-text {
-				font-size: 10px;  /* Kleinere Schrift für den Footer-Text */
-			}
-
-			.footer-links {
-				margin: 10px 0;
-			}
-
-			.footer-links a {
-				font-size: 12px;  /* Kleinere Links im Footer */
-				margin: 5px 0;    /* Weniger Abstand zwischen den Links */
-			}
-		}
+}
 
 
 
