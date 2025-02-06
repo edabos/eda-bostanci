@@ -102,7 +102,7 @@ body{
 			right: 0px;
 			padding-right:20px;
 			transition: transform 0.0s ease, font-size 0.0s ease;
-			animation:colorChange 5s infinite alternate;
+			animation: colorChange 8s infinite alternate;
 			animation: rotate-plus 0s ease-in-out infinite alternate;
 		}
 	}
@@ -267,7 +267,7 @@ body{
 		}
 		
 		.site-name-animation{
-			font-size: 40px;
+			font-size: 50px;
 		}
 	}
 
@@ -294,7 +294,7 @@ body{
 
 
 .project h2{
-	font-size:40px;
+	font-size:60px;
 }
 
 	@media (max-width: 600px) {
@@ -484,7 +484,7 @@ body{
 
 footer {
 	color: white;
-	padding: 40px 0;
+	padding: 20px 0;
 	text-align: center;
 	position: relative;
 	bottom: 0;
@@ -502,6 +502,8 @@ footer {
 	.footer-text {
 		font-size: 12px;
 		margin-bottom: 5px;
+		
+		line-height: 1.4;
 	}
 
 
@@ -514,12 +516,28 @@ footer {
 	.footer-links a {
 		color: white;
 		text-decoration: none;
-		margin: 0 15px;
-		font-size: 14px;
+		margin: 0 10px;
+		font-size: 12px;
 			
 		animation: colorChange 5s infinite alternate;
 	}
-}
+
+
+	@media (max-width: 600px) {
+		.footer-text {
+			font-size: 10px;
+			line-height: 1.2;
+		}
+
+		.footer-links a {
+			font-size: 10px;
+			margin: 0 8px;
+		}
+
+		footer {
+			padding: 10px 0;
+		}
+	}
 
 
 
