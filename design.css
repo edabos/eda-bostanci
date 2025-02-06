@@ -128,7 +128,7 @@ body{
 	transition: background 1s;
 }
 
-	@media (max-width: 600px) {
+	@media (max-width: 600px){
 		.menu a {
 			font-size: 7vw;
 		}
@@ -261,13 +261,14 @@ body{
 		}
 
 		.project h2 {
-			font-size: 21px;
+			font-size: 28px;
 		}
 		
-		.site-name-animation{
-			font-size: 30px;
+		.side-name-animation{
+			font-size: 40px;
+		}
 	}
-}
+
 
 .project{
 	background:none;
@@ -518,17 +519,6 @@ footer {
 	}
 
 
-		@media (max-width: 600px) {
-			.footer-links {
-				display: block;
-				margin-top: 10px;
-			}
-
-			.footer-links a {
-				display: block;
-				margin: 5px 0;
-				}
-			}
 
 
 
