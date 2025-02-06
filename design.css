@@ -99,7 +99,9 @@ body{
 
 	@media (max-width: 400px) {
 		.menu-button {
-			right: 20px;
+			right: 20px !important;
+			font-size: 120px !important;
+
 		}
 	}
 
