@@ -27,6 +27,8 @@ body{
 	max-width: 1200px;
 	background-color:black;
 	color: white;
+	
+	min-height: 100vh;
 }
 
 
@@ -60,8 +62,9 @@ body{
 
 
 .navbar.open{
-	height: 900px;
 	padding-top:50px;
+
+	height: 100vh;
 }
 
 
@@ -86,11 +89,12 @@ body{
 	cursor: pointer;
 	transition: transform 0.8s ease, font-size 0.8s ease;
 	position: fixed;
-	right: 70px;
 	top: 5px;
 	z-index: 1100;
 
 	animation: rotate-plus 4s ease-in-out infinite alternate;
+	
+	right: 70px;
 }
 
 
@@ -235,6 +239,16 @@ body{
 			grid-template-columns: 1fr;
 		}
 	}
+	
+	@media (max-width: 600px) {
+		.projects-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.project h2 {
+			font-size: 28px;
+		}
+	}
 
 
 .project{
@@ -337,6 +351,23 @@ body{
 	width: 100%;
 	border-radius: 5px;
 }
+
+
+	@media (max-width: 768px) {
+		.project-title {
+			font-size: clamp(20px, 5vw, 30px);
+		}
+
+		.project-description {
+			font-size: 18px;
+		}
+
+		#about-me {
+		font-size: 18px;
+		line-height: 1.6;
+		}
+	}
+
 
 
 
