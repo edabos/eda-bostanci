@@ -102,7 +102,7 @@ body{
 			right: 0px;
 			padding-right:20px;
 			font-size: 100px;
-			transition: transform 0.0s ease, font-size 0.0s ease;
+			transition:none
 			animation:colorChange 5s infinite alternate;
 			animation: rotate-plus 0s ease-in-out infinite alternate;
 		}
