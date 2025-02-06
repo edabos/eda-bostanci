@@ -363,10 +363,11 @@ body{
 	text-align: left;
 	padding-top:100px;
 	padding-bottom:20px;
-	
-	font-size:20px;
 }
 
+#project-title h2{	
+	font-size:20px;
+}
 
 #project-description{
 	max-width: 800px;
@@ -374,7 +375,9 @@ body{
 	text-align: left;
 	padding-bottom:100px;
 	line-height: 1.9;
-	
+}
+
+#project-description p{
 	font-size:16px;
 }
 
