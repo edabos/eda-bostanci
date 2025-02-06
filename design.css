@@ -98,6 +98,12 @@ body{
 	right: 70px;
 }
 
+	@media (max-width: 600px) {
+		.menu-button {
+			right: 15px;
+			font-size: 100px;
+		}
+	}
 
 
 
