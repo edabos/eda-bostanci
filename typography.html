@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="de" class="typography">
+
+	
+<head>
+	<meta charset="utf-8" />
+	<title>typography</title>
+	<link rel="stylesheet" href="design.css"/>
+
+	
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	
+	
+	
+</head>
+	
+	
+<body>
+
+
+<div class="navbar" id="navbar">
+	<button class="menu-button" id="menu-button" onclick="toggleMenu()">+</button>
+		<div class="menu">
+			<a href="index.html"data-text="home">h.</a>
+			<a href="corporate-design.html"data-text="corporate design">c.d.</a>
+			<a href="typography.html"data-text="typography">t.</a>
+			<a href="editorial-design.html"data-text="editorial design">e.d.</a>
+			<a href="photography.html"data-text="photography">p.</a>
+			<a href="about-me.html"data-text="about me">a.m.</a>
+		</div>
+</div>
+
+
+
+<div class="box">
+<div class="site-name-animation">typography</div>
+</div>
+
+
+
+
+
+<div class="box">
+	<div class="projects-grid">
+		<div class="project" onclick="openProject('project-jazz-soul')">
+		<h2>jazz soul</h2>
+			<img src="images/jazz-soul.png" alt="jazz soul">
+		</div>
+		<div class="project" onclick="openProject('project-bubble-tech')">
+		<h2>bubble tech</h2>
+			<img src="images/bubble-tech.png" alt="bubble tech">
+		</div>
+			
+	</div>
+</div>
+
+
+
+
+
+<div id="project-jazz-soul" class="project-overlay">
+	<button class="close-button" onclick="closeProject()">×</button>
+	
+	<div class="project-content">
+		<h2 id="project-title">jazz soul</h2>
+		<h3>typeface</h3>
+		<p id="project-description">The typeface is characterized by its extreme contrast in stroke width and consists exclusively of uppercase letters. This high-contrast typography gives texts a striking, dynamic look and is particularly suitable for headlines and bold designs that aim to capture attention and leave a lasting impression.</p>
+	</div>
+		
+	<div class="project-images">
+			<img src="images/jazz-soul-alphabet.png" alt="jazz soul alphabet">
+			<img src="images/jazz-soul-detail.png" alt="jazz soul detail">
+			<img src="images/jazz-soul-flyer.jpg" alt="jazz soul flyer">
+			<img src="images/jazz-soul-poster.jpg" alt="jazz soul poster">
+	</div>
+</div>	
+
+	
+	
+	
+	
+	
+	
+
+<div id="project-bubble-tech" class="project-overlay">
+	<button class="close-button" onclick="closeProject()">×</button>
+	
+	<div class="project-content">
+		<h2 id="project-title">bubble tech</h2>
+		<h3>typeface</h3>
+		<p id="project-description">The Bubble Tech typeface is characterized by its soft, rounded shapes and a modern, friendly aesthetic. It combines playful curves with a sturdy, highly legible structure. This futuristic typography is particularly suitable for headlines, branding, and bold designs that aim to create a warm, inviting, yet striking impression.</p>
+	</div>
+		
+	<div class="project-images">
+			<img src="images/bubble-tech-alphabet.png" alt="bubble tech alphabet">
+			<img src="images/bubble-tech-alphabet-2.png" alt="bubble tech alphabet 2">
+			<img src="images/bubble-tech-website.jpg" alt="bubble tech website">
+			<img src="images/bubble-tech-flyer.jpg" alt="bubble tech flyer">
+    </div>
+</div>		
+	
+
+
+
+
+
+
+<footer>
+	<div class="footer-content">
+		<p class="footer-text">© 2025 Sabahat Eda Bostanci | Communication Design</p>
+			<div class="footer-links">
+				<a href="mailto:eda.bostanci@hotmail.de">Email</a>
+				<a href="https://www.instagram.com/eda.bsnc?igsh=MXRnM3J1Zzd0NmoyMQ%3D%3D&utm_source=qr" target="_blank">Instagram</a>
+				<a href="https://www.linkedin.com/in/dein-linkedin" target="_blank">LinkedIn</a>
+			</div>
+		<p class="footer-text">Based in Mannheim</p>
+	</div>
+</footer>
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+
+
+<!-- für manuelles active im menü-->
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+	let currentPage = window.location.pathname.split("/").pop();
+	console.log("Aktueller Pfad:", window.location.pathname);
+
+	if (currentPage === "" || currentPage === "/") {
+	currentPage = "index.html";
+	}
+
+	document.querySelectorAll(".menu a").forEach(link => {
+	link.classList.remove("active");
+	});
+
+	document.querySelectorAll(".menu a").forEach(link => {
+	let linkHref = link.getAttribute("href");
+	console.log("Überprüfe Link:", linkHref);
+
+	if (linkHref === currentPage) {
+	link.classList.add("active");
+	}
+	});
+	});
+</script>
+
+
+
+
+</body>
+
+</html>

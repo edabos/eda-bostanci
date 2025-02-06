@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="de" class="editorial design">
+
+	
+<head>
+	<meta charset="utf-8" />
+	<title>editorial design</title>
+	<link rel="stylesheet" href="design.css"/>
+
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	
+	
+	
+</head>
+	
+	
+<body>
+
+
+
+<div class="navbar" id="navbar">
+	<button class="menu-button" id="menu-button" onclick="toggleMenu()">+</button>
+		<div class="menu">
+			<a href="index.html"data-text="home">h.</a>
+			<a href="corporate-design.html"data-text="corporate design">c.d.</a>
+			<a href="typography.html"data-text="typography">t.</a>
+			<a href="editorial-design.html"data-text="editorial design">e.d.</a>
+			<a href="photography.html"data-text="photography">p.</a>
+			<a href="about-me.html"data-text="about me">a.m.</a>
+		</div>
+</div>
+
+
+
+
+<div class="box">
+	<div class="site-name-animation">editorial<br>design</div>
+</div>
+
+
+<div class="box">
+	<div class="projects-grid">
+		<div class="project" onclick="openProject('project-strong-ice-people')">
+		<h2>strong<br>ice<br>people</h2>
+			<img src="images/ice.jpg" alt="ice">
+		</div>
+		<div class="project" onclick="openProject('project-japanese-writing-systems')">
+		<h2>japanese<br>writing<br>systems</h2>
+			<img src="images/japan.jpg" alt="japan">
+		</div>
+			
+	</div>
+</div>
+
+
+
+
+
+<div id="project-strong-ice-people" class="project-overlay">
+	<button class="close-button" onclick="closeProject()">×</button>
+	
+	<div class="project-content">
+		<h2 id="project-title">strong ice people</h2>
+		<h3>a backbreaking job</h3>
+		<p id="project-description">For a period of over six hours, I had the privilege of accompanying Bahar Yalcin, the manager of the Eiscafé Feldberg, in her daily work.
+			During this time, I was able to engage in in-depth conversations with her and observe her professional activities closely.<br><br>
+			This project focuses on information design, a discipline that deals with the creation and visualization of information.
+			It is about transforming complex data and facts into an engaging and understandable form.
+			Through the skillful arrangement of text, graphics, and visual elements, information is clearly structured and easily accessible. The goal of information design is to present complex content in an intuitive and aesthetically pleasing way, and to present it in the form of a brochure.</p>
+	</div>
+		
+	<div class="project-images">
+			<img src="images/ice.jpg" alt="ice">
+			<img src="images/ice-magazine.jpg" alt="ice magazine">
+			<img src="images/ice-magazine-2.jpg" alt="ice magazine 2">
+			<img src="images/ice-magazine-3.jpg" alt="ice magazine 3">
+			<img src="images/ice-cups.png" alt="ice cups">
+			<img src="images/ice-consumption.png" alt="ice consumption">
+			<img src="images/ice-popular.png" alt="ice popular">
+	</div>
+</div>	
+
+
+
+
+
+
+
+
+<div id="project-japanese-writing-systems" class="project-overlay">
+	<button class="close-button" onclick="closeProject()">×</button>
+	
+	<div class="project-content">
+		<h2 id="project-title">japanese writing systems</h2>
+		<h3>hiragana and katakana</h3>
+		<p id="project-description">The Japanese writing system, consisting of Kanji, Hiragana, and Katakana, is, in my opinion, a groundbreaking invention with a very fascinating history and an enormous influence on Japanese culture and society.<br><br>
+		During the Heian period, a patriarchal society in the 7th century, women were only allowed to learn Manyôgana – an alternative phonetic use of Kanji. Kanji, the Chinese characters, were considered inappropriate because they were too complex for everyday use with a brush.
+		Over time, female scribes simplified the characters and developed Hiragana, which was also known as Onamoji back then. It stands out with its distinctive cursive script and thus became the Japanese script for writing.<br><br>
+		Parallel to the development of Hiragana, in the 8th century, the second syllabary of Japan, Katakana, emerged. However, it was originally developed by Buddhist monks as a reading aid for complex texts in Kanji.
+		Katakana is characterized by only 50 characters, which, in comparison to the complex Kanji, almost resembles a form of shorthand. It is therefore much easier to learn and use.</p>
+	</div>
+		
+	<div class="project-images">
+			<img src="images/japan.jpg" alt="japan">
+			<img src="images/japan-magazine.jpg" alt="japan magazine">
+			<img src="images/japan-magazine-2.jpg" alt="japan magazine 2">
+			<img src="images/japan-magazine-3.jpg" alt="japan magazine 3">
+			<img src="images/japan-circle.png" alt="japan circle">
+			<img src="images/japan-pages.png" alt="japan pages">
+			<img src="images/japan-map.png" alt="japan map">
+    </div>
+</div>		
+	
+
+
+
+
+
+<footer>
+	<div class="footer-content">
+		<p class="footer-text">© 2025 Sabahat Eda Bostanci | Communication Design</p>
+			<div class="footer-links">
+				<a href="mailto:eda.bostanci@hotmail.de">Email</a>
+				<a href="https://www.instagram.com/eda.bsnc?igsh=MXRnM3J1Zzd0NmoyMQ%3D%3D&utm_source=qr" target="_blank">Instagram</a>
+				<a href="https://www.linkedin.com/in/dein-linkedin" target="_blank">LinkedIn</a>
+			</div>
+		<p class="footer-text">Based in Mannheim</p>
+	</div>
+</footer>	
+	
+	
+	
+	
+
+
+
+
+
+<script src="script.js"></script>
+
+
+<!-- für manuelles active im menü-->
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+	let currentPage = window.location.pathname.split("/").pop();
+	console.log("Aktueller Pfad:", window.location.pathname);
+
+	if (currentPage === "" || currentPage === "/") {
+	currentPage = "index.html";
+	}
+
+	document.querySelectorAll(".menu a").forEach(link => {
+	link.classList.remove("active");
+	});
+
+	document.querySelectorAll(".menu a").forEach(link => {
+	let linkHref = link.getAttribute("href");
+	console.log("Überprüfe Link:", linkHref);
+
+	if (linkHref === currentPage) {
+	link.classList.add("active");
+	}
+	});
+	});
+</script>
+
+
+
+
+</body>
+
+</html>

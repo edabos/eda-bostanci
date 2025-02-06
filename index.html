@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de" class="home">
+
+	
+<head>
+	<meta charset="utf-8" />
+	<title>eda bostanci / communication design</title>
+	<link rel="stylesheet" href="design.css"/>
+
+	
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	
+</head>
+
+
+
+
+<body>
+
+<div class="slideshow-container">
+	<div class="slide fade">
+		<img src="images/homebild-4.jpg" alt="Bild 4">
+	</div>
+	<div class="slide fade">
+		<img src="images/homebild-2.jpg" alt="Bild 2">
+	</div>
+	<div class="slide fade">
+		<img src="images/homebild-1.jpg" alt="Bild 1">
+	</div>
+	<div class="slide fade">
+		<img src="images/homebild-3.jpg" alt="Bild 3">
+	</div>
+
+</div>
+
+
+
+
+<div class="site-name-animation">visual mind<br>unfolded</div>
+	<div class="name-container">
+		<p>sabahat eda bostanci</p>
+</div>
+
+
+
+
+<div class="navbar" id="navbar">
+	<button class="menu-button" id="menu-button" onclick="toggleMenu()">+</button>
+		<div class="menu">
+			<a href="index.html"data-text="home">h.</a>
+			<a href="corporate-design.html"data-text="corporate design">c.d.</a>
+			<a href="typography.html"data-text="typography">t.</a>
+			<a href="editorial-design.html"data-text="editorial design">e.d.</a>
+			<a href="photography.html"data-text="photography">p.</a>
+			<a href="about-me.html"data-text="about me">a.m.</a>
+		</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+
+
+<!-- für manuelles active im menü-->
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+	let currentPage = window.location.pathname.split("/").pop();
+	console.log("Aktueller Pfad:", window.location.pathname);
+
+	if (currentPage === "" || currentPage === "/") {
+	currentPage = "index.html";
+	}
+
+	document.querySelectorAll(".menu a").forEach(link => {
+	link.classList.remove("active");
+	});
+
+	document.querySelectorAll(".menu a").forEach(link => {
+	let linkHref = link.getAttribute("href");
+	console.log("Überprüfe Link:", linkHref);
+
+	if (linkHref === currentPage) {
+	link.classList.add("active");
+	}
+	});
+	});
+</script>
+
+
+
+
+</body>
+
+</html>

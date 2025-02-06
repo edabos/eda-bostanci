@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="de" class="corporate design">
+
+	
+<head>
+	<meta charset="utf-8" />
+	<title>corporate design</title>
+	<link rel="stylesheet" href="design.css"/>
+
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	
+	
+	
+</head>
+	
+	
+<body>
+
+
+
+<div class="navbar" id="navbar">
+	<button class="menu-button" id="menu-button" onclick="toggleMenu()">+</button>
+		<div class="menu">
+			<a href="index.html"data-text="home">h.</a>
+			<a href="corporate-design.html"data-text="corporate design">c.d.</a>
+			<a href="typography.html"data-text="typography">t.</a>
+			<a href="editorial-design.html"data-text="editorial design">e.d.</a>
+			<a href="photography.html"data-text="photography">p.</a>
+			<a href="about-me.html"data-text="about me">a.m.</a>
+		</div>
+</div>
+
+
+
+
+<div class="box">
+	<div class="site-name-animation">corporate<br>design</div>
+</div>
+
+
+<div class="box">
+	<div class="projects-grid">
+		<div class="project" onclick="openProject('project-limon')">
+		<h2>limon</h2>
+			<img src="images/limon-sign.jpg" alt="limon">
+		</div>
+		<div class="project" onclick="openProject('project-rufer')">
+		<h2>rufer</h2>
+			<img src="images/rufer-sign.jpg" alt="rufer">
+		</div>
+			
+	</div>
+</div>
+
+
+
+
+
+<div id="project-limon" class="project-overlay">
+	<button class="close-button" onclick="closeProject()">×</button>
+	
+	<div class="project-content">
+		<h2 id="project-title">limon</h2>
+		<h3>laptop friendly café</h3>
+		<p id="project-description">The idea behind the café is to provide a perfect place for people looking for a productive work environment. With the right atmosphere and surroundings, we create a space where efficient work is possible. Key aspects include long opening hours and optimal equipment. The café is "laptop-friendly" and offers everything needed for efficient work. We specifically target students, pupils, and workers who are looking for a pleasant and supportive place for their activities.</p>
+	</div>
+		
+	<div class="project-images">
+			<img src="images/limon-sign.jpg" alt="limon">
+			<img src="images/limon-logo.png" alt="limon logo">
+			<img src="images/limon-card.jpg" alt="limon card">
+			<img src="images/limon-sign-2.jpg" alt="limon sign 2">
+			<img src="images/limon-bag.jpg" alt="limon bag">
+			<img src="images/limon-pin.jpg" alt="limon pin">
+			<img src="images/limon-cup.jpg" alt="limon cup">
+			<img src="images/limon-paper.jpg" alt="limon paper">
+	</div>
+</div>	
+
+	
+	
+	
+	
+	
+	
+
+<div id="project-rufer" class="project-overlay">
+	<button class="close-button" onclick="closeProject()">×</button>
+	
+	<div class="project-content">
+		<h2 id="project-title">rufer</h2>
+		<h3>graphic novel publisher</h3>
+		<p id="project-description">The graphic novels depict problems, situations, or events that arise in our everyday lives. The stories may be presented in a dramatic or exaggerated manner but with a design that is as simple as possible, using minimal elements. Everyday situations can reflect either cross-cultural or culture-specific issues. The goal is to raise awareness of both familiar and unfamiliar events in society. Even when we are aware of them, we often tend to overlook them.</p>
+	</div>
+		
+	<div class="project-images">
+			<img src="images/rufer-sign.jpg" alt="rufer">
+			<img src="images/rufer-logo.png" alt="rufer logo">
+			<img src="images/rufer-paper.jpg" alt="rufer paper">
+			<img src="images/rufer-website.jpg" alt="rufer website">
+			<img src="images/rufer-bag.jpg" alt="rufer bag">
+			<img src="images/rufer-tag.jpg" alt="rufer tag">
+			<img src="images/rufer-card.jpg" alt="rufer card">
+    </div>
+</div>	
+
+
+
+
+
+<footer>
+	<div class="footer-content">
+		<p class="footer-text">© 2025 Sabahat Eda Bostanci | Communication Design</p>
+			<div class="footer-links">
+				<a href="mailto:eda.bostanci@hotmail.de">Email</a>
+				<a href="https://www.instagram.com/eda.bsnc?igsh=MXRnM3J1Zzd0NmoyMQ%3D%3D&utm_source=qr" target="_blank">Instagram</a>
+				<a href="https://www.linkedin.com/in/dein-linkedin" target="_blank">LinkedIn</a>
+			</div>
+		<p class="footer-text">Based in Mannheim</p>
+	</div>
+</footer>	
+	
+
+	
+	
+	
+	
+	
+
+
+
+
+
+<script src="script.js"></script>
+
+
+<!-- für manuelles active im menü-->
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+	let currentPage = window.location.pathname.split("/").pop();
+	console.log("Aktueller Pfad:", window.location.pathname);
+
+	if (currentPage === "" || currentPage === "/") {
+	currentPage = "index.html";
+	}
+
+	document.querySelectorAll(".menu a").forEach(link => {
+	link.classList.remove("active");
+	});
+
+	document.querySelectorAll(".menu a").forEach(link => {
+	let linkHref = link.getAttribute("href");
+	console.log("Überprüfe Link:", linkHref);
+
+	if (linkHref === currentPage) {
+	link.classList.add("active");
+	}
+	});
+	});
+</script>
+
+
+
+
+</body>
+
+</html>
