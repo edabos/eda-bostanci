@@ -100,8 +100,8 @@ body{
 
 	@media (max-width: 600px) {
 		.menu-button {
-			right: 20px;
-			font-size: 120px;
+			right: 5px;
+			font-size: 100px;
 
 		}
 	}
