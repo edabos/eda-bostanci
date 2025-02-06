@@ -267,7 +267,7 @@ body{
 		}
 		
 		.site-name-animation{
-			font-size: 50px;
+			font-size: 40px;
 		}
 	}
 
@@ -484,58 +484,61 @@ body{
 
 footer {
 	color: white;
-	padding: 20px 0;
+	padding: 10px 0;
 	text-align: center;
 	position: relative;
 	bottom: 0;
 	width: 100%;
+	font-size:10px;
 }
 
 
 	.footer-content {
-		max-width: 1200px;
+		max-width: 100%;
 		margin: 0 auto;
 		padding: 0 20px;
 	}
 
 
 	.footer-text {
-		font-size: 12px;
-		margin-bottom: 5px;
+		font-size: 10px;
+		margin:0px;
 		
-		line-height: 1.4;
+		line-height: 1.2;
+		
 	}
 
 
 
 	.footer-links {
-		margin: 10px 0;
+		margin: 5px 0;
 	}
 
 
 	.footer-links a {
 		color: white;
 		text-decoration: none;
-		margin: 0 10px;
-		font-size: 12px;
+		margin: 0 5px;
+		font-size: 10px;
 			
 		animation: colorChange 5s infinite alternate;
 	}
 
 
 	@media (max-width: 600px) {
+		footer {
+			padding: 5px 0;
+			font-size: 8px;
+		}
+
 		.footer-text {
-			font-size: 10px;
-			line-height: 1.2;
+			font-size: 8px;
+			line-height: 1.1;
 		}
 
 		.footer-links a {
-			font-size: 10px;
-			margin: 0 8px;
-		}
-
-		footer {
-			padding: 10px 0;
+			font-size: 8px;
+			margin: 0 3px;
 		}
 	}
 
